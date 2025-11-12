@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta name="description" content="Erfan Ali Srimiti Foundation is dedicated to humanitarian work, community development, and welfare programs in Bangladesh.">
+    <meta name="keywords" content="Charity, Foundation, NGO, Humanity, Bangladesh, Education Support">
+
+    <title>@ViewData["Title"] - Erfan Ali Srimiti Foundation</title>
+
+@*     <!-- Bootstrap First -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Tailwind After Bootstrap (So It Does NOT Override Collapse Behavior) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts & Animations -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Your Styles -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />*@
+ </head>
+
+<body>
+
+   @*  <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+            <div class="container-fluid px-4">
+
+                <a class="navbar-brand fw-bold text-teal-600" href="/" style="color:#0d9488!important;">
+                    Erfan Ali Srimiti Foundation
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#donate">Donate</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link lang-toggle" href="#">EN / বাংলা</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header> *@
+
+    <div class="container">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+   @*  <footer class="bg-gray-800 text-gray-200 py-6 text-center">
+        <div class="container">
+            &copy; 2025 - Erfan Ali Srimiti Foundation -
+            <a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-teal-400">Privacy</a>
+        </div>
+    </footer> *@
+
+    <!-- JS Files -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @* @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        AOS.init({ duration: 1000 });
+
+        $(document).ready(function () {
+          $("#menu-toggle").click(function () {
+            $("#menu").slideToggle(200);
+            $(this).toggleClass("active");
+
+            // Toggle icon between ☰ and ✖
+            if ($(this).hasClass("active")) {
+              $(this).find("svg").html('<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />');
+            } else {
+              $(this).find("svg").html('<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />');
+            }
+          });
+        });
+
+    </script> *@
+
+</body>
+</html>
+
